@@ -26,6 +26,7 @@ public class LoginTest {
 	public void closeApplication() {
 	  driver.close();
 	}
+	
    @Test
 	public void UserLoginTest() {
 		driver.get("https://bookcart.azurewebsites.net/");
@@ -38,6 +39,7 @@ public class LoginTest {
 		String password = DecodeUtility.decodeSensitiveData("UHZ2QDEyMzQ1Cgo=");
 		login.performLoginOperation(username, password);
 		System.out.println("Title: "+driver.getTitle());
+		System.out.println("HI");
 			
 	}
     
